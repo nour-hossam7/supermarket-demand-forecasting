@@ -1,15 +1,1 @@
-# Supermarket Demand Forecasting: Person 1
 
-One executed notebook analyzes daily chain sales: trend, seasonality, ACF, ADF/KPSS, ARIMA, weekly SARIMAX, residual diagnostics, and a seven-day forecast.
-Data path: `../demand-forecasting-kernels-only/`, with fallback `../Downloads/demand-forecasting-kernels-only/`. Source CSVs are read-only.
-
-Run from this project root using `.venv`:
-
-```powershell
-.\.venv\Scripts\python.exe -m jupyter nbconvert --to notebook --execute Person1_Supermarket_TimeSeries_ARIMA.ipynb --inplace
-```
-Generated files in `output/`:
-- `arima_7_day_forecast.csv`
-- `arima_model_comparison.csv`
-- `arima_residuals.csv`
-- `arima_validation_predictions.csv`
